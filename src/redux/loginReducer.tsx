@@ -13,8 +13,8 @@ interface IInitialState {
 
 const initialState: IInitialState = {
     title: 'Login',
-    email: '', /*'nikolas@gmail.com'*/
-    password: '', /*'1234567890'*/
+    email: 'test@email.nya',
+    password: 'ftc{.}mxy~gub%jzc',
     rememberMe: false,
 };
 

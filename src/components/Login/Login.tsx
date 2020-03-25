@@ -52,7 +52,7 @@ class Login extends React.Component<IMstp & IMdtp> {
     };
 
     onSendData = () => {
-        this.props.sendData(this.state.email, this.state.password, this.state.rememberMe)
+        this.props.sendData(this.props.email, this.props.password, this.state.rememberMe)
     };
 
 
@@ -68,16 +68,16 @@ class Login extends React.Component<IMstp & IMdtp> {
 
                 <h2>{this.props.title}</h2>
 
-                <div>nikolas@gmail.com</div>
-                <div>1234567890</div>
+                {/*<div>test@email.nya</div>
+                <div>ftc{.}mxy~gub%jzc</div>*/}
 
                 <form className={s.loginForm}>
 
-                    <input value={this.state.email}
+                    <input value={this.props.email}
                            onChange={this.onChangeEmail}
                            className={s.loginInput} type="text"/>
 
-                    <input value={this.state.password}
+                    <input value={this.props.password}
                            onChange={this.onChangePassword}
                            className={s.loginInput} type="text"/>
 
